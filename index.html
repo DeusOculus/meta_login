@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Get Meta token</title>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <script src="index.js"></script>
+
+  <!-- The JS SDK Login Button -->
+  <div id="spinner">
+    <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with"
+      data-use-continue-as="true" data-onlogin="checkLoginState();" data-config_id="742010530662987">
+    </div>
+  </div>
+
+  <div id="status">
+    <table class="data">
+      <tr>
+        <td>name</td>
+        <td id="username"></td>
+      </tr>
+      <tr>
+        <td>id</td>
+        <td id="user_id"></td>
+      </tr>
+      <tr>
+        <td>token</td>
+        <td id="user_token"></td>
+      </tr>
+    </table>
+
+    <br><br>
+
+    <table class="data">
+      <tr>
+        <td>name</td>
+        <td id="page_name"></td>
+      </tr>
+      <tr>
+        <td>id</td>
+        <td id="page_id"></td>
+      </tr>
+      <tr>
+        <td>token</td>
+        <td id="page_token"></td>
+      </tr>
+    </table>
+
+    <br><br>
+
+    <table class="data">
+      <tr>
+        <td>name</td>
+        <td id="ig_name"></td>
+      </tr>
+      <tr>
+        <td>token</td>
+        <td id="ig_username"></td>
+      </tr>
+      <tr>
+        <td>id</td>
+        <td id="ig_id"></td>
+      </tr>
+    </table>
+
+
+    <div class="footer">
+      <h3>
+        <a target="_blank" href="https://developers.facebook.com/tools/debug/accesstoken/"> Access token debugger </a>
+      </h3>
+    </div>
+  </div>
+
+  <!-- Load the JS SDK asynchronously -->
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+</body>
+
+</html>
